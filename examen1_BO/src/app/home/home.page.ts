@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService} from "../servicios/auth.service";
-import { ChatsService, chat} from "../servicios/chats.service";
-import {ModalController} from "@ionic/angular";
-import { ChatComponent} from "../componentes/chat/chat.component";
+import { AuthService } from "../servicios/auth.service";
+import { ChatsService, chat } from "../servicios/chats.service";
+import { ModalController } from "@ionic/angular";
+import { ChatComponent } from "../componentes/chat/chat.component";
 
 
 @Component({
@@ -10,27 +10,28 @@ import { ChatComponent} from "../componentes/chat/chat.component";
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit{
+export class HomePage implements OnInit {
 
-  public Chats : any = [];
+  public chatRooms: any = [];
 
-  constructor( public authservice : AuthService, public chatservice : ChatsService, 
-    private modal : ModalController){}
+  constructor(public authservice: AuthService, public chatservice: ChatsService,
+    private modal: ModalController) { }
 
-  Onlogout(){
+  Onlogout() {
     this.authservice.logout();
   }
-  ngOnInit(){
-    this.chatservice.getChats().subscribe(chats => {
-      this.Chats = chats;
+  ngOnInit() {
+
+    this.chatservice.getChatRooms().subscribe(chats => {
+      this.chatRooms = chats;
     })
   }
-  openChat(chat){
+  openChat(chat) {
     this.modal.create({
       component: ChatComponent,
-      componentProps : {
-        name: chat.name 
+      componentProps: {
+        chat: chat
       }
-    }).then( (modal) => modal.present())
+    }).then((modal) => modal.present())
   }
 }
