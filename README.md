@@ -16,7 +16,7 @@ Al momento que corramosel proyecto vamos a tener que ingresar con un correo ya a
 podra dar clic en los chats "Chat deportes", "Clases" y asi ingresar a enviar un mensaje, cuyo mensaje sera enviado a firebase. Por otra parte el usuario se podrá registrar y cuyos usuarios ingresen a firebase, y los usuarios que anteriormente tenian una cuenta podran dirigirse directamente al chat, tendran un icono en donde les permitira retroceder después de enviar un mensaje, tambien encontraran  un pequeño menú en la parte superior derecha para que puedan salir de la sesión. 
 
 
-
+link: video: https://youtu.be/B1s7mj93wt8
 
 
 
