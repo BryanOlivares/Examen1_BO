@@ -9,11 +9,11 @@ previamente 2 chats la cual es "Chat deportes", "Clases" en donde podremos ingre
 dirigirse a la ruta "http://localhost:8100/home" a ver los chats no podra hacer ya que necesita estar registrado o que previamente haber tenido un inicio de sesión.
 Ambas rutas estan protegidas para que ningun usuario que no este iniciado la sesión no pueda realizar el envio de chats.Creamos un modelo de message en donde se guardara 
 los mensajes que se envien a firebase.
-Creamos dos compponentes que es login y chat en donde el login tendra como caracteristicas no permitir a usuarios que no tengan una cuenta creada y le conllevara a permanecer
-en la misma ruta hasta que pueda iniciar sesión, en la parte de chat vamos a establecer las funcionalidades del button para enviar mensajes, el envio de los datos hacia firebase.
+Creamos dos componentes que es login,chat  y registro en donde el login tendra como caracteristicas no permitir a usuarios que no tengan una cuenta creada y le conllevara a permanecer en la misma ruta hasta que pueda iniciar sesión, en la parte de chat vamos a establecer las funcionalidades del button para enviar mensajes, el envio de los datos hacia firebase. Se creo el componente registro para que cada usuario que se registre pasa a la base de firebase y que estoy permitira que cada usuario escribir mensaje y envir.
+
 Funcionalidad:
 Al momento que corramosel proyecto vamos a tener que ingresar con un correo ya autorizado o crearse un correo, este usuario autorizado podrá ingresar a la ruta de los chats en donde 
-podra dar clic en los chats "Chat deportes", "Clases" y asi ingresar a enviar un mensaje, cuyo mensaje sera enviado a firebase.
+podra dar clic en los chats "Chat deportes", "Clases" y asi ingresar a enviar un mensaje, cuyo mensaje sera enviado a firebase. Por otra parte el usuario se podrá registrar y cuyos usuarios ingresen a firebase, y los usuarios que anteriormente tenian una cuenta podran dirigirse directamente al chat, tendran un icono en donde les permitira retroceder después de enviar un mensaje, tambien encontraran  un pequeño menú en la parte superior derecha para que puedan salir de la sesión. 
 
 
 
